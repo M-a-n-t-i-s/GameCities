@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.input {
+    @apply w-[477px] h-[24px] top-[-3px] left-0 bg-gray-50;
+    border: none !important;
+}
+
+
+.panel {
+    overflow: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.panel::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+.timeBar {
+    width: 100%;
+    height: 5px;
+    position: relative;
+    animation: decreaseTime 120s linear forwards;
+    @apply bg-violet-300
+}
+
+@keyframes decreaseTime {
+    0% {
+        width: 100%;
+    }
+    100% {
+        width: 0;
+    }
+}
